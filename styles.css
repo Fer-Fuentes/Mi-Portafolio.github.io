@@ -1,0 +1,441 @@
+/* Barra de navegacion */
+.navbar {
+    padding: 2rem;
+    background: linear-gradient(to right, #8d99ae -25%, #edf2f4 50%, #d9d9d9 130%);
+  }
+  
+  .navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Cambio de color al pasar el cursor por encima de los botones */
+  .navbar-nav .nav-link {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #000000ba;
+    padding: 6px 20px;
+    transition: color 0.4s, border-bottom 0.5s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #8ef;
+    border-bottom: 3px solid #bef;
+    border-radius: 35px;
+    transform: scale(1) translateY(50);
+    opacity: 5;
+  }
+  
+  /*Estilo de Logo*/
+  
+  /* Efecto de giro al pasar el cursor sobre el logo */
+  .navbar-brand img:hover {
+    border-radius: 50px; 
+    transition: transform 0.6s ease-in-out, color 0.3s, background-color 0.3s;
+    transform: rotate(360deg); 
+    background-color: #fff;
+    padding: 1px; 
+  }
+  
+  
+  /* Estilos generales */
+  h1,h2,h3,h4 {
+    font-family: 'arial' !important;
+  }
+  p {
+    font-family: 'Calibri', 'Josefin Slab'!important;
+  }
+  a {
+    font-family: 'arial' !important;
+  }
+  
+  
+  /* Seccion Hero */
+  
+  .Perfil {
+    min-height: 450px;
+    text-align: center;
+    color: white;
+  }
+  
+  .cuadro-perfil {
+    max-width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color:  black;
+  
+  }
+  
+  .Perfil-principal {
+    padding: 3rem;
+  }
+  
+  .imagen-perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  h2{
+     font-size: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+     
+  }
+  
+  /*Sobre mi*/
+  #fondo2 {
+    background: linear-gradient(to right, #f6f3f3 -25%, #f9f8fa 50%, #e0e1dd 130%);
+  }
+  
+  .sobre-mi {
+    margin-top: 130px;
+    margin-bottom: 30px;
+  }
+  
+  .Perfil-inferior-img,
+  .seccion-titulo,
+  .seccion-texto {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease, transform 0.8s ease;
+  }
+  
+  .sobre-mi.animated .Perfil-inferior-img,
+  .sobre-mi.animated .seccion-titulo,
+  .sobre-mi.animated .seccion-texto {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Experiencia */
+  
+  .experiencia {
+    padding: 50px 0;
+  }
+  .badges-contenedor svg {
+    height: 35px;
+    width: 35px;
+    margin: 2px;
+  }
+  .experiencia-box {
+    border-radius: 15px;
+    padding: 40px 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .experiencia-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .experiencia .columna {
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in;
+  }
+  
+  .experiencia i {
+    font-size: 30px;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .experiencia-titulo {
+    font-size: 23px !important;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center !important;
+  }
+  
+  .experiencia p {
+    font-size: 16px;
+    text-align: justify;
+    color: black;
+  }
+  
+  .badge {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px;
+    background-color: #ff5e3a;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  
+  .container {
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  
+  
+  /* Proyectos */
+  #fondo3 {
+    background: linear-gradient(to right, #a8a8a8 -25%, #f5f0f6 50%, #a9a9a9 130%);
+  }
+  .proyectos-recientes {
+  padding: 40px;
+  }
+  .proyecto img {
+    margin: 10px;
+    border: 2px solid #000;
+  }
+  .titulo-proyecto {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #000;
+  height: 100px;
+  border-radius: 10px; 
+  }
+  
+  h4 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center !important;
+  align-items: center !important;
+  padding-top: 30px;
+  color: #d9d9d9;
+  
+  }
+  .proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+  }
+  
+  .proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+  }
+  
+  .overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  }
+  
+  .overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+  }
+  
+  .proyecto {
+  position: relative;
+  }
+  
+  .proyecto:hover img {
+  opacity: 0.2;
+  }
+  
+  .proyecto:hover .overlay {
+  opacity: 1;
+  }
+  
+  .overlay .iconos-contenedor {
+  display: flex;
+  }
+  
+  .overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+  }
+  .contenedor-boton-proyecto {
+  align-items: center !important;
+  text-align: center !important;
+  }
+  
+  /*Trjeta de Contactos*/
+  
+  #contacto {
+  max-width: 1100px;
+  min-height: 210px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  }
+  
+  .contactos .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding-left: 5px;
+  padding-right: 5px;
+  }
+  
+  .contactos .rectangulo {
+  background-color: #000;
+  border-radius: 10px;
+  }
+  
+  .contactos .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  }
+  
+  .contactos .descripcion {
+  color: white;
+  font-size: 1.2rem;
+  }
+  
+  .contactos button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+  }
+  
+  .contactos button:hover {
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  color: black;
+  }
+  
+  .contactos button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+  }
+  
+  .contactos button:hover i {
+  color: black;
+  }
+    
+  /* Pie de pagina (footer) */
+  .cuadro-del-final {
+  background-color: black;
+  width: 100%;
+  height: 250px;
+  padding-top: 60px;
+  margin-top: 80px;
+  }
+  h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  }
+  footer {
+  min-height: 50px;
+  }
+  .footer-logo {
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+  text-align: center !important;
+  align-items: center !important;
+  }
+  
+  .footer-texto {
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center !important;
+  align-items: center !important;
+  }
+  
+  .iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+  }
+  
+  .iconos-redes-sociales a:hover i {
+  color: black;
+  }
+  
+  .derechos-de-autor {
+  text-align: center;
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+  }
+  
+  /* Adaptable (Responsivo) */
+  
+  @media screen and (max-width: 400px) {
+  .overlay p {
+  font-size: 18px;
+  }
+  
+  .overlay i {
+  font-size: 40px;
+  }
+  }
+  
+  @media screen and (max-width: 767px) {
+  .navbar-brand {
+  display: none;
+  }
+  }
+  
+  @media screen and (max-width: 800px) {
+  .testimonio-imagen {
+  height: 120px;
+  width: 120px;
+  }
+  
+  .testimonio-texto {
+  font-size: 18px;
+  }
+  }
+  
+  @media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+  max-width: 600px;
+  }
+  }
+  
